@@ -1,5 +1,8 @@
 import component AsyncLogo from './components/AsyncLogo.o3';
+import component PageTitle from './components/PageTitle.o3';
 
+/** TODO Error fix first element is erased by HMR
+ */
 <template protected>
   <head>
     <style>
@@ -9,6 +12,8 @@ import component AsyncLogo from './components/AsyncLogo.o3';
         display: table;
         width: 100%;
         height: 100%;
+        font-family: 'Roboto', sans-serif;
+        color: blue;
       }
     </style>
   </head>
@@ -27,9 +32,11 @@ import component AsyncLogo from './components/AsyncLogo.o3';
       padding-left: 100px;
     }
   </style>
+  <div></div>
   <div class="research"></div>
   <div class="head">
     <AsyncLogo />
+    <PageTitle />
   </div>
 </template>
 <proto type="app">

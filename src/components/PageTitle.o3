@@ -1,0 +1,32 @@
+
+import component StoreApplication from './StoreApplication.o3';
+
+<template private>
+  <style>
+  .container {
+    margin-left: 400px;
+    h1 {
+        color: #555;
+    }
+    h4 {
+      color: #aaa;
+    }
+  }
+  </style>
+  <StoreApplication namespace="application"/>
+  <div class="container">
+    <h1>${this.title.slice(0, 1).toUpperCase() + this.title.slice(1)}</h1>
+    <h4>${this.description}</h4>
+  </div>
+</template>
+<proto type="component">
+  declare:
+    public title: string = "Ogone";
+    declare public description: string;
+  default:
+    Store.dispatch('application/load', {
+        title: 'Test' + Math.random(),
+        description: 'this is the description',
+    });
+    break;
+</proto>
