@@ -64,10 +64,10 @@
         OnodeListRendering,
       } from 'file:///home/rudy/Documents/Perso/Ogone/src/main/Ogone.ts';
       // outputs
-      Ogone.types["data-3106648828-nt"] = "component";
-Ogone.types["data-1749377316-nd6"] = "async";
-Ogone.types["data-1749377316-nt"] = "async";
-Ogone.components['data-3106648828'] = function(Onode) {
+      Ogone.types["data-382480759-nt"] = "component";
+Ogone.types["data-2894910998-nd6"] = "async";
+Ogone.types["data-2894910998-nt"] = "async";
+Ogone.components['data-382480759'] = function(Onode) {
     const data = {
     };
     let Controllers;
@@ -97,7 +97,7 @@ Ogone.components['data-3106648828'] = function(Onode) {
         }).bind(data)
     };
 };
-Ogone.components['data-1749377316'] = function(Onode) {
+Ogone.components['data-2894910998'] = function(Onode) {
     const data = {
     };
     let Controllers;
@@ -152,7 +152,7 @@ Ogone.components['data-1749377316'] = function(Onode) {
         }).bind(data)
     };
 };
-Ogone.contexts['data-1749377316-nt'] = function(opts) {
+Ogone.contexts['data-2894910998-nt'] = function(opts) {
     const GET_TEXT = opts.getText;
     const GET_LENGTH = opts.getLength;
     const POSITION = opts.position;
@@ -170,8 +170,8 @@ Ogone.contexts['data-1749377316-nt'] = function(opts) {
         throw err;
     }
 };
-Ogone.contexts['data-1749377316-n5'] = Ogone.contexts['data-1749377316-nt'];
-Ogone.contexts['data-1749377316-nd6'] = function(opts) {
+Ogone.contexts['data-2894910998-n5'] = Ogone.contexts['data-2894910998-nt'];
+Ogone.contexts['data-2894910998-nd6'] = function(opts) {
     const GET_TEXT = opts.getText;
     const GET_LENGTH = opts.getLength;
     const POSITION = opts.position;
@@ -189,9 +189,9 @@ Ogone.contexts['data-1749377316-nd6'] = function(opts) {
         throw err;
     }
 };
-Ogone.contexts['data-1749377316-n3'] = Ogone.contexts['data-1749377316-nt'];
-Ogone.contexts['data-1749377316-t7'] = Ogone.contexts['data-1749377316-n3'];
-Ogone.contexts['data-3106648828-nt'] = function(opts) {
+Ogone.contexts['data-2894910998-n3'] = Ogone.contexts['data-2894910998-nt'];
+Ogone.contexts['data-2894910998-t7'] = Ogone.contexts['data-2894910998-n3'];
+Ogone.contexts['data-382480759-nt'] = function(opts) {
     const GET_TEXT = opts.getText;
     const GET_LENGTH = opts.getLength;
     const POSITION = opts.position;
@@ -209,27 +209,30 @@ Ogone.contexts['data-3106648828-nt'] = function(opts) {
         throw err;
     }
 };
-Ogone.contexts['data-3106648828-n9'] = Ogone.contexts['data-3106648828-nt'];
-Ogone.contexts['data-3106648828-n10'] = Ogone.contexts['data-3106648828-n9'];
-Ogone.contexts['data-3106648828-n7'] = Ogone.contexts['data-3106648828-nt'];
-Ogone.contexts['data-3106648828-t17'] = Ogone.contexts['data-3106648828-n7'];
-Ogone.render['data-3106648828-nt'] = function(ctx, pos = [], i = 0, l = 0) {
+Ogone.contexts['data-382480759-n11'] = Ogone.contexts['data-382480759-nt'];
+Ogone.contexts['data-382480759-n12'] = Ogone.contexts['data-382480759-n11'];
+Ogone.contexts['data-382480759-n9'] = Ogone.contexts['data-382480759-nt'];
+Ogone.contexts['data-382480759-n7'] = Ogone.contexts['data-382480759-nt'];
+Ogone.contexts['data-382480759-t17'] = Ogone.contexts['data-382480759-n7'];
+Ogone.render['data-382480759-nt'] = function(ctx, pos = [], i = 0, l = 0) {
     let p = pos.slice();
     let o = null;
-    const nt = _h('null'), n7 = _h('style'), t17 = `.head[data-3106648828] { background: #efefef;border-bottom: 1px solid #ccc;height: 60px;width: 100%;padding-left: 100px;; }`, n9 = _h('div'), n10 = _h("ogone-node");
-    _at(nt, 'data-3106648828', '');
+    const nt = _h('null'), n7 = _h('style'), t17 = `.head[data-382480759] { background: #efefef;border-bottom: 1px solid #ccc;border-top: 1px solid #ccc;height: 130px;width: 100%;; } .black_head[data-382480759] { background: #fff;height: 60px;width: 100%;padding-left: 100px;; }`, n9 = _h('div'), n11 = _h('div'), n12 = _h("ogone-node");
+    _at(nt, 'data-382480759', '');
     l++;
-    _at(n7, 'data-3106648828', '');
+    _at(n7, 'data-382480759', '');
     l++; /**/ 
     l--;
     _ap(n7, t17);
-    _at(n9, 'data-3106648828', '');
-    _at(n9, 'class', 'head');
+    _at(n9, 'data-382480759', '');
+    _at(n9, 'class', 'black_head');
+    _at(n11, 'data-382480759', '');
+    _at(n11, 'class', 'head');
     l++;
     o = {
         isRoot: false,
         isOriginalNode: true,
-        original: n10,
+        original: n12,
         placeholder: new Text(' '),
         name: "AsyncLogo",
         tree: "null>div>AsyncLogo",
@@ -259,48 +262,49 @@ Ogone.render['data-3106648828-nt'] = function(ctx, pos = [], i = 0, l = 0) {
         isImported: true,
         isRemote: false,
         extends: '-nt',
-        uuid: 'data-3106648828',
+        uuid: 'data-382480759',
         positionInParentComponent: p,
         levelInParentComponent: l,
         parentComponent: ctx,
-        parentCTXId: 'data-3106648828-n10',
+        parentCTXId: 'data-382480759-n12',
         props: [],
-        uuid: 'data-1749377316',
+        uuid: 'data-2894910998',
         routes: null,
         namespace: '',
         requirements: null,
         dependencies: []
     };
-    n10.placeholder = o.placeholder;
-    setOgone(n10, o);
+    n12.placeholder = o.placeholder;
+    setOgone(n12, o);
     o = null;
-    _at(n10, 'data-3106648828', '');
+    _at(n12, 'data-382480759', '');
     l--;
-    _ap(n9, n10);
+    _ap(n11, n12);
     l--;
     _ap(nt, n7);
     _ap(nt, n9);
+    _ap(nt, n11);
     return nt;
 };
-Ogone.render['data-1749377316-nd6'] = function(ctx, pos = [], i = 0, l = 0) {
+Ogone.render['data-2894910998-nd6'] = function(ctx, pos = [], i = 0, l = 0) {
     let p = pos.slice();
     let o = null;
     const nd6 = _h('img');
-    _at(nd6, 'data-1749377316', '');
+    _at(nd6, 'data-2894910998', '');
     _at(nd6, 'src', '/src/public/ogone-svg.svg');
     return nd6;
 };
-Ogone.render['data-1749377316-nt'] = function(ctx, pos = [], i = 0, l = 0) {
+Ogone.render['data-2894910998-nt'] = function(ctx, pos = [], i = 0, l = 0) {
     let p = pos.slice();
     let o = null;
-    const nt = _h('null'), n3 = _h('style'), t7 = `.back[data-1749377316] { background: white;border-radius: 100%;height: fit-content;width: fit-content;border: 1px solid #ccc;filter: drop-shadow(0px 5px 10px #00000025); } .back[data-1749377316] img[data-1749377316] { width: 150px;height: 150px;; }`, n5 = _h('div'), nd6 = _h("ogone-node");
-    _at(nt, 'data-1749377316', '');
+    const nt = _h('null'), n3 = _h('style'), t7 = `.back[data-2894910998] { background: white;border-radius: 100%;height: fit-content;width: fit-content;border: 1px solid #ccc;filter: drop-shadow(0px 5px 10px #00000025);position: relative;top: 30%;left: 120px; } .back[data-2894910998] img[data-2894910998] { width: 150px;height: 150px;; }`, n5 = _h('div'), nd6 = _h("ogone-node");
+    _at(nt, 'data-2894910998', '');
     l++;
-    _at(n3, 'data-1749377316', '');
+    _at(n3, 'data-2894910998', '');
     l++; /**/ 
     l--;
     _ap(n3, t7);
-    _at(n5, 'data-1749377316', '');
+    _at(n5, 'data-2894910998', '');
     _at(n5, 'class', 'back');
     l++;
     o = {
@@ -339,7 +343,7 @@ Ogone.render['data-1749377316-nt'] = function(ctx, pos = [], i = 0, l = 0) {
         isImported: false,
         isRemote: false,
         extends: '-nd6',
-        uuid: 'data-1749377316'
+        uuid: 'data-2894910998'
     };
     nd6.placeholder = o.placeholder;
     setOgone(nd6, o);
@@ -352,7 +356,7 @@ Ogone.render['data-1749377316-nt'] = function(ctx, pos = [], i = 0, l = 0) {
             });
         }
     }));
-    _at(nd6, 'data-1749377316', '');
+    _at(nd6, 'data-2894910998', '');
     l--;
     _ap(n5, nd6);
     l--;
