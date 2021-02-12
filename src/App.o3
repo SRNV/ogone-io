@@ -1,3 +1,29 @@
+import component AsyncLogo from './components/AsyncLogo.o3';
+
 <template protected>
-  Ogone's website coming soon
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        display: table;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <style>
+    .head {
+      background: #efefef;
+      border-bottom: 1px solid #ccc;
+      height: 60px;
+      width: 100%;
+      padding-left: 100px;
+    }
+  </style>
+  <div class="head">
+    <AsyncLogo />
+  </div>
 </template>
+<proto type="app">
+</proto>
