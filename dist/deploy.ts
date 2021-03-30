@@ -8,9 +8,9 @@ async function handleRequest(request) {
   const { pathname: PATHNAME } = new URL(request.url);
   switch(true) {
     
-        case PATHNAME === '/static/ogone-svg--svg.svg':
-          files['/static/ogone-svg--svg.svg'] = await (await (await fetch(new URL("./static/ogone-svg--svg.svg", import.meta.url).href)).blob()).text();
-          return new Response(files['/static/ogone-svg--svg.svg'], {
+        case PATHNAME === '/static/ogone-svg.svg':
+          files['/static/ogone-svg.svg'] = await (await (await fetch(new URL("./static/ogone-svg.svg", import.meta.url).href)).blob()).text();
+          return new Response(files['/static/ogone-svg.svg'], {
             headers: {
               "content-type": "image/svg+xml; charset=UTF-8",
             },
