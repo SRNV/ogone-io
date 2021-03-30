@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" width="720" height="720">
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="0" y1="0" x2="0" y2="0">
+			<stop offset="0" stop-color="#3b2e64"  />
+			<stop offset="1" stop-color="#9492f7"  />
+		</linearGradient>
+		<radialGradient id="grd2" gradientUnits="userSpaceOnUse"  cx="0" cy="0" r="0">
+			<stop offset="0" stop-color="#171623"  />
+			<stop offset="0.94" stop-color="#9492f7"  />
+		</radialGradient>
+		<linearGradient id="grd3" gradientUnits="userSpaceOnUse"  x1="-282.418" y1="200.355" x2="646.8" y2="1527.415">
+			<stop offset="0" stop-color="#8091dc"  />
+			<stop offset="0.73" stop-color="#62e785"  />
+			<stop offset="1" stop-color="#40cbf4"  />
+		</linearGradient>
+		<radialGradient id="grd4" gradientUnits="userSpaceOnUse"  cx="567.862" cy="378.395" r="482.125">
+			<stop offset="0.23" stop-color="#152937"  />
+			<stop offset="1" stop-color="#92a2f7"  />
+		</radialGradient>
+		<linearGradient id="grd5" gradientUnits="userSpaceOnUse"  x1="274.458" y1="-82.921" x2="615.935" y2="404.758">
+			<stop offset="0.176" stop-color="#191c2c"  />
+			<stop offset="0.587" stop-color="#7989cc"  />
+			<stop offset="1" stop-color="#9cd0ef"  />
+		</linearGradient>
+		<linearGradient id="grd6" gradientUnits="userSpaceOnUse"  x1="0" y1="0" x2="0" y2="0">
+			<stop offset="0" stop-color="#171623"  />
+			<stop offset="0.94" stop-color="#9492f7"  />
+		</linearGradient>
+		<linearGradient id="grd7" gradientUnits="userSpaceOnUse"  x1="0" y1="0" x2="0" y2="0">
+			<stop offset="0" stop-color="#171623"  />
+			<stop offset="1" stop-color="#9492f7"  />
+		</linearGradient>
+		<linearGradient id="grd8" gradientUnits="userSpaceOnUse"  x1="0" y1="0" x2="0" y2="0">
+			<stop offset="0" stop-color="#171623"  />
+			<stop offset="1" stop-color="#9492f7"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: url(#grd1) } 
+		.shp1 { fill: url(#grd2) } 
+		.shp2 { fill: url(#grd3) } 
+		.shp3 { fill: url(#grd4) } 
+		.shp4 { fill: url(#grd5) } 
+		.shp5 { fill: url(#grd6) } 
+		.shp6 { fill: url(#grd7) } 
+		.shp7 { fill: url(#grd8) } 
+	</style>
+	<path id="Shape 3" class="shp0" d="" />
+	<path id="Shape 1" class="shp1" d="" />
+	<path id="Shape 2 copy" class="shp2" d="M355 267.11C415.07 263.86 456.6 277.38 484 304.11C525 344.11 539 378.11 531 439.11C519.54 526.48 435.93 581.27 380.59 594.36C299.96 613.43 208.07 575.83 150.94 499.32C41.21 352.41 130.4 144.05 245.7 78.44C275.67 61.38 264.13 64.19 264.13 64.19C264.13 64.19 91.36 113.28 55.83 304.48C20.47 494.78 148.58 655.36 326.86 669.04C505.13 682.71 590.97 545.75 599.92 458.15C608.93 370.05 551.97 281.82 444.88 268.24C324.12 252.93 345.95 267.6 355 267.11Z" />
+	<path id="Background copy" fill-rule="evenodd" class="shp3" d="M667.1 414.59C639.05 571.07 498.86 678.78 344.09 669.84C509.33 672.54 591.15 544.48 597 462.54C603.82 367.07 549.98 296.57 443.26 280.48C341.2 265.1 288.08 331.07 279.13 403.63C278.03 412.56 267.92 531.42 379.12 550.4C430.96 559.24 485.92 542.67 510 499.11C483.98 550.32 424.06 585.08 380.59 595.36C299.96 614.43 200.62 576.72 145 499.11C56.42 375.54 73.54 160.54 260.45 66.28C272.95 59.98 263.61 67 264.31 64.73C311.72 49.1 363.61 44.72 416.28 54.17C585.29 84.47 697.41 245.57 667.1 414.59Z" />
+	<path id="Shape 2 copy 2" class="shp4" d="M490.08 523.2C446.08 563.2 326.1 547.52 293.74 479.79C263.97 417.51 279.47 308.99 319 268.11C389.01 195.7 490.28 190.51 562 226.11C699 294.11 665 423.11 665 423.11C665 423.11 690.2 353.78 651.67 251.37C610.63 142.32 421 68.11 316.23 156.52C208.81 247.17 202.84 355.64 233 433.11C281.11 556.69 406.48 562.67 458 546.11C486 537.11 517.21 498.53 490.08 523.2Z" />
+	<path id="Shape 3" class="shp5" d="" />
+	<path id="Shape 3" class="shp6" d="" />
+	<path id="Shape 2" class="shp7" d="" />
+</svg>
