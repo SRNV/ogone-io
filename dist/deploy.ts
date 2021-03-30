@@ -3,21 +3,20 @@ const files: { [k: string]: string } = {
   template: void 0,
   script: void 0,
   style: void 0,
-  ressources: {},
 };
 async function handleRequest(request) {
-  const { pathname } = new URL(request.url);
+  const { pathname: PATHNAME } = new URL(request.url);
   switch(true) {
-
-        case pathname === '/static/ogone-svg.svg':
+    
+        case PATHNAME === '/static/ogone-svg.svg':
           files['/static/ogone-svg.svg'] = await (await (await fetch(new URL("./static/ogone-svg.svg", import.meta.url).href)).blob()).text();
           return new Response(files['/static/ogone-svg.svg'], {
             headers: {
               "content-type": "image/svg+xml; charset=UTF-8",
             },
           });
-
-    case pathname === '/app.js':
+        
+    case PATHNAME === '/app.js':
       files.script = files.script || await (
         await (
           await fetch(new URL('./app.js', import.meta.url).href)
@@ -28,7 +27,7 @@ async function handleRequest(request) {
           "content-type": "application/javascript; charset=UTF-8",
         },
       });
-    case pathname === '/style.css':
+    case PATHNAME === '/style.css':
       files.style = files.style || await (
         await (
           await fetch(new URL('./style.css', import.meta.url).href)
