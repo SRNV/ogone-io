@@ -9,7 +9,7 @@ async function handleRequest(request) {
   switch(true) {
     
         case request.url === '/static/ogone-svg.svg':
-          files['/static/ogone-svg.svg'] = await (await (await fetch(new URL("./static/ogone-svg.svg", import.meta.url))).blob()).text();
+          files['/static/ogone-svg.svg'] = await (await (await fetch(new URL("./static/ogone-svg.svg", import.meta.url).pathname)).blob()).text();
           return new Response(files['/static/ogone-svg.svg'], {
             headers: {
               "content-type": "image/svg+xml; charset=UTF-8",
