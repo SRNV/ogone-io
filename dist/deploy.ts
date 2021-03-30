@@ -1,5 +1,5 @@
 
-const files = {
+const files: { [k: string]?: string } = {
   template: void 0,
   script: void 0,
   style: void 0,
@@ -19,7 +19,7 @@ async function handleRequest(request) {
     case request.url === '/app.js':
       files.script = files.script || await (
         await (
-          await fetch(new URL(request.url, import.meta.url).pathname)
+          await fetch(new URL('./app.js', import.meta.url).pathname)
         ).blob()
       ).text();
       return new Response(files.script, {
@@ -30,7 +30,7 @@ async function handleRequest(request) {
     case request.url === '/style.css':
       files.style = files.style || await (
         await (
-          await fetch(new URL(request.url, import.meta.url).pathname)
+          await fetch(new URL('./style.css', import.meta.url).pathname)
         ).blob()
       ).text();
       return new Response(files.style, {
