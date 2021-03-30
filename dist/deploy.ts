@@ -7,31 +7,43 @@ const files = {
 };
 async function handleRequest(request) {
   switch(true) {
-
+    
         case request.url === '/static/ogone-svg.svg':
-          files['/static/ogone-svg.svg'] = await (await (await fetch(new URL("./static/ogone-svg.svg", import.meta.url).pathname)).blob()).text();
+          files['/static/ogone-svg.svg'] = await (await (await fetch(new URL("./static/ogone-svg.svg", import.meta.url))).blob()).text();
           return new Response(files['/static/ogone-svg.svg'], {
             headers: {
               "content-type": "image/svg+xml; charset=UTF-8",
             },
           });
-
+        
     case request.url === '/app.js':
-      files.script = files.script || await (await (await fetch(request.url, import.meta.url)).blob()).text();
+      files.script = files.script || await (
+        await (
+          await fetch(new URL(request.url, import.meta.url).pathname)
+        ).blob()
+      ).text();
       return new Response(app.script, {
         headers: {
           "content-type": "application/javascript; charset=UTF-8",
         },
       });
     case request.url === '/style.css':
-      files.style = files.style || await (await (await fetch(request.url, import.meta.url)).blob()).text();
+      files.style = files.style || await (
+        await (
+          await fetch(new URL(request.url, import.meta.url).pathname)
+        ).blob()
+      ).text();
       return new Response(app.style, {
         headers: {
           "content-type": "text/css; charset=UTF-8",
         },
       });
     default:
-      files.template = files.template || await (await (await fetch('./index.html', import.meta.url)).blob()).text();
+      files.template = files.template || await (
+        await (
+          await fetch(new URL('./index.html', import.meta.url).pathname)
+        ).blob()
+      ).text();
       return new Response(files.template, {
         headers: {
           "content-type": "text/html; charset=UTF-8",
