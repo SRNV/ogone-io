@@ -1,0 +1,18 @@
+import component AsyncLogo from './AsyncLogo.o3';
+
+<template>
+  <style>
+    .container {
+      width: fit-content;
+      height: 100%;
+      color: white;
+      display: flex;
+      vertical-align: middle;
+      background: #3a3a3a;
+      border-right: 1px solid #4e4e4e;
+    }
+  </style>
+  <div class="container" >
+    <AsyncLogo />
+  </div>
+</template>
