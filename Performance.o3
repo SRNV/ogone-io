@@ -1,0 +1,15 @@
+/**
+ * each iterations shouldn't recreate the array to get the value
+ * add text services and avoid creating functions that update the text for each iterations
+ */
+<template>
+  <div --for={i of Array.from(new Array(20000)).map((o,i) => i)}>
+    test ${i}
+  </div>
+</template>
+<proto type="app">
+  declare:
+    test = ''
+  default:
+    this.test = 'test 2'
+</proto>

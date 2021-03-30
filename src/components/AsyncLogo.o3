@@ -8,16 +8,16 @@
         border: 1px solid #ccc;
         filter: drop-shadow(0px 5px 10px #00000025);
         position: relative;
-        top: 30%;
+        top: 121px;
         left: 120px;
         img {
-            width: 150px;
-            height: 150px;
+          width: 272px;
+          height: auto;
         }
     }
   </style>
   <div class="back">
-    <img --await src="/src/public/ogone-svg.svg" />
+    <img --await src="./ogone-svg.svg" />
   </div>
 </template>
 <proto type="async">

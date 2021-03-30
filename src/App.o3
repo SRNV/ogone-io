@@ -1,43 +1,77 @@
 import component AsyncLogo from './components/AsyncLogo.o3';
-import component PageTitle from './components/PageTitle.o3';
-
+import component AsyncPageTitle from './components/AsyncPageTitle.o3';
+import component NavRouter from './components/NavRouter.o3';
 /** TODO Error fix first element is erased by HMR
  */
-<template protected>
+<template>
   <head>
     <style>
       body {
+        overflow: hidden;
         margin: 0px;
         padding: 0px;
         display: table;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         font-family: 'Roboto', sans-serif;
-        color: blue;
+        color: #121212;
       }
     </style>
   </head>
   <style>
+  .container {
+    display: grid;
+    grid-template-areas: 'n s' 'n h';
+    grid-template-rows: 45px 2fr;
+    grid-template-columns: auto 2fr;
+    width: 100%;
+    height: 100%;
     .head {
-      background: #efefef;
+      grid-area: h;
+      background: #f6f6f6;
       border-bottom: 1px solid #ccc;
       border-top: 1px solid #ccc;
-      height: 130px;
+      height: fit-content;
       width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      .view {
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
     }
-    .research {
+    .nav {
+      grid-area: n;
+      width: fit-content;
+      border-right: 1px solid #d8d8d8;
+    }
+    .search {
+      grid-area: s;
       background: #fff;
       height: 60px;
       width: 100%;
       padding-left: 100px;
     }
+  }
   </style>
-  <div></div>
-  <div class="research"></div>
-  <div class="head">
-    <AsyncLogo />
-    <PageTitle />
+  <div
+    class="container" >
+    <div class="search">a</div>
+    <div class="head">
+      <div class="view">
+        <AsyncLogo />
+        <AsyncPageTitle />
+      </div>
+    </div>
+    <div class="nav">
+      <NavRouter />
+    </div>
   </div>
 </template>
-<proto type="app">
+
+
+<proto
+  type="app"
+  base="./public">
 </proto>

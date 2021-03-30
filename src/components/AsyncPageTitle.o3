@@ -1,0 +1,64 @@
+
+import component StoreApplication from './StoreApplication.o3';
+
+<template private>
+  <style global>
+    .container {
+      margin-left: 400px;
+      h1 {
+          color: #555;
+          font-weight: 100;
+          span {
+              color: #9abdff;
+              a {
+                  text-decoration: none;
+                  color: inherit;
+              }
+          }
+      }
+      h4 {
+        opacity: ${this.description_opacity.toFixed(2)};
+        color: #ccc;
+        font-weight: 100;
+        margin-top: -20px;
+        margin-left: 20px;
+      }
+    }
+  /** */
+  </style>
+  <StoreApplication namespace="application"/>
+  <div class="container">
+    <h1>
+      <span>
+        <a href="https://github.com/SRNV/Ogone">
+          Ogone
+        </a> ${' '}
+      </span>
+      - ${this.title.slice(0, 1).toUpperCase() + this.title.slice(1)}
+    </h1>
+    <h4>${this.description}</h4>
+  </div>
+</template>
+<proto type="async">
+  declare:
+    public title: string = "Ogone";
+    declare public description: string;
+    description_letterSpace: number = 30;
+    description_opacity: number = 0;
+  default:
+    await Store.dispatch('application/load', {
+      title: 'Test' + Math.random(),
+      description: 'this is the description',
+    }).then(() => {
+        let count = 0;
+        let interval = setInterval(() => {
+            this.description_opacity +=- (this.description_opacity - 1) / 10;
+            count ++;
+            if (count >= 8000) {
+                clearInterval(interval);
+            }
+        }, 1000/60);
+        Async.resolve();
+    });
+    break;
+</proto>
