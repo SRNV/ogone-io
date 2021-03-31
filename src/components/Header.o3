@@ -4,6 +4,7 @@ import component AsyncLogo from './AsyncLogo.o3';
   <style>
     .container {
       width: fit-content;
+      min-width: 100px;
       height: 100%;
       color: white;
       display: flex;
@@ -12,7 +13,24 @@ import component AsyncLogo from './AsyncLogo.o3';
       border-right: 1px solid #4e4e4e;
     }
   </style>
-  <div class="container" >
+  <div ref="container" class="container" >
     <AsyncLogo />
   </div>
 </template>
+
+<proto type="component">
+  declare:
+    public expose: boolean = false;
+  default:
+    const [container] = Refs.container;
+    const containerBDB = container.getBoundingClientRect();
+    document.addEventListener('mousemove', (event) => {
+      if (event.clientX < containerBDB.width) {
+        this.expose = true;
+      } else {
+        this.expose = false
+      }
+      console.warn('expose', this.expose, event, containerBDB);
+    });
+    break;
+</proto>

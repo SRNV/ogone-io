@@ -1,16 +1,16 @@
 <template>
   <style>
     .back {
-        border-radius: 100%;
-        height: fit-content;
-        width: fit-content;
-        filter: drop-shadow(0px 5px 10px #00000025);
-        position: relative;
-        margin: 10px;
-        img {
-          width: 70px;
-          height: auto;
-        }
+      border-radius: 100%;
+      height: fit-content;
+      width: fit-content;
+      filter: drop-shadow(0px 5px 10px #00000025);
+      position: relative;
+      margin: 10px auto;
+      img {
+        width: 70px;
+        height: auto;
+      }
     }
   </style>
   <div class="back">
