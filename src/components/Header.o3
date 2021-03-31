@@ -34,7 +34,7 @@ import component AsyncLogo from './AsyncLogo.o3';
     <AsyncLogo />
     <space />
     <div class="item">Docs</div>
-    <div class="item">Test deploy and push</div>
+    <div class="item">Api</div>
   </div>
 </template>
 
