@@ -11,10 +11,30 @@ import component AsyncLogo from './AsyncLogo.o3';
       vertical-align: middle;
       background: #3a3a3a;
       border-right: 1px solid #4e4e4e;
+      flex-direction: column;
+      .item {
+        padding: 10px;
+        border-top: 1px solid #ffffff34;
+        border-bottom: @border-top;
+        cursor: pointer;
+        transition: background 0.05s ease;
+        text-align: center;
+        &:hover {
+          background: black;
+        }
+      }
+      space {
+        width: 100px;
+        height: @width;
+      }
     }
+    /** */
   </style>
   <div ref="container" class="container" >
     <AsyncLogo />
+    <space />
+    <div class="item">Docs</div>
+    <div class="item">Api</div>
   </div>
 </template>
 
