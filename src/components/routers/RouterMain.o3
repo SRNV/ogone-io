@@ -3,8 +3,8 @@ import component Welcome from '../Welcome.o3';
 <proto type="router">
   def:
     routes:
-        - name: 404
-          path: 404
-          component: Welcome
-          title: Ogone | Advanced Composition for Future
+      - name: 404
+        path: 404
+        component: Welcome
+        title: Ogone | Advanced Composition for Future
 </proto>

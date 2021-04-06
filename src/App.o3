@@ -28,8 +28,6 @@ import component RouterMain from './components/routers/RouterMain.o3';
     <RouterMain />
   </div>
 </template>
-
-
 <proto
   type="app"
   base="./public">

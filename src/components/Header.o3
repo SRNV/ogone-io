@@ -12,12 +12,7 @@ import component AsyncLogo from './AsyncLogo.o3';
       background: #3a3a3a;
       border-right: 1px solid #4e4e4e;
       flex-direction: column;
-      position: absolute;
       transition: left 0.5s ease;
-      left: -200%;
-      &.visible {
-        left: 0;
-      }
       space {
         width: 100px;
         height: @width;
@@ -38,8 +33,7 @@ import component AsyncLogo from './AsyncLogo.o3';
   </style>
   <div
     ref="container"
-    class="container"
-    --class={{ visible: this.expose }}>
+    class="container" >
     <AsyncLogo />
     <space />
     <div class="item">Docs</div>
@@ -64,7 +58,6 @@ import component AsyncLogo from './AsyncLogo.o3';
       } else {
         this.expose = false
       }
-      console.warn('expose', this.expose, event, containerBDB);
     });
     break;
 </proto>

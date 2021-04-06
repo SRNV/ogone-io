@@ -8,5 +8,5 @@
     };
     // style is by default scoped, use global attribute
   </style>
-    <h1>Ogone</h1>
+  <h1>Ogone</h1>
 </template>
