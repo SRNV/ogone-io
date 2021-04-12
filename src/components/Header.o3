@@ -36,10 +36,10 @@ import component AsyncLogo from './AsyncLogo.o3';
     class="container" >
     <AsyncLogo />
     <space />
-    <div class="item">Docs</div>
+    <div class="item"> Docs </div>
     <div
       class="item"
-      --click:goGit>Git</div>
+      --click:goGit> Git </div>
   </div>
 </template>
 
